@@ -1,6 +1,16 @@
 .letterBox  {
   background-color: grey;
-  font-size: 3rem;;
-  width: 3rem;
+  position: relative;
+  width: 60px;
+  max-height: 60px;
   border-radius: 5px;
+  margin: 3px;
+}
+
+.letter{
+  background: none;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  padding: 5px
 }

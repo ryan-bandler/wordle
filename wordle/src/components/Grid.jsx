@@ -11,44 +11,47 @@ const Grid = () => {
   return (
     <div className="grid">
 
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-        </Row>
-        <Row className="justify-content-md-center">
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-          <Col className="column"><LetterBox letter="A"/></Col>
-        </Row>
-        
-        
+      <Container className="container">
+          <Row className="row">
+            <LetterBox letter="H"></LetterBox>      
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>        
+          </Row>
+          <Row className="row">
+            <LetterBox letter="H"></LetterBox>      
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>        
+          </Row>
+          <Row className="row">
+            <LetterBox letter="H"></LetterBox>      
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>        
+          </Row>
+          <Row className="row">
+            <LetterBox letter="H"></LetterBox>      
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>        
+          </Row>
+          <Row className="row">
+            <LetterBox letter="H"></LetterBox>      
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>    
+            <LetterBox letter="H"></LetterBox>        
+          </Row>
+  
+       
+       
+
+    
        
         
         
