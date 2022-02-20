@@ -1,9 +1,11 @@
 import { useState } from "react";
 import {Container, Row} from "react-bootstrap";
+import { useSelector } from "react-redux";
 import LetterBox from "./LetterBox";
 import "./Grid.css"
 
 const getStatus = (word, letter, letterIndex) => {
+  if(letter === "") return ""
   if(word[letterIndex] === letter)
     return "correct"
   else if(word.includes(letter))
@@ -14,7 +16,8 @@ const getStatus = (word, letter, letterIndex) => {
 
 const Grid = () => {
 
-  const [board, setBoard] = useState(Array(5).fill().map(() => Array(5).fill("H")));
+  const board = useSelector(state => state.board);
+  
   const WORD = "HELLO"
   return (
     <div className="grid">
