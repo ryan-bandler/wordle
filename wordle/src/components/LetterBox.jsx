@@ -1,11 +1,13 @@
 import "./LetterBox.css";
-import {Badge} from "react-bootstrap"
-const LetterBox = ({letter}) => {
+
+const LetterBox = ({letter, status}) => {
   return (
-    <div className="letterBox">
+    <div 
+      className="letterBox" 
+      id={status}
+    >
       <h1 className="letter">{letter}</h1>
     </div>
-    
   )
 }
 

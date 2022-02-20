@@ -2,6 +2,7 @@
   background-color: grey;
   position: relative;
   width: 60px;
+  height: 60px;
   max-height: 60px;
   border-radius: 5px;
   margin: 3px;
@@ -13,4 +14,16 @@
   text-align: center;
   vertical-align: center;
   padding: 5px
+}
+
+#misplaced{
+  background-color: #deb737;
+}
+
+#wrong{
+  background-color: #5a6266;
+}
+
+#correct{
+  background-color: #66a358;
 }
