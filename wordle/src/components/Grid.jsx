@@ -29,21 +29,6 @@ const Grid = () => {
             )
           })}
       </Container>
-
-      <button onClick={() => {
-        dispatch(update(row, col, "O"));
-        dispatch(incrementCol());
-      }}>
-        update
-      </button>
-
-      <button onClick={() => {
-
-        dispatch(incrementRow());
-        dispatch(resetCol());
-      }}>
-        row
-      </button>
     </div>
   )
 }
