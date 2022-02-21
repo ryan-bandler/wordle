@@ -6,24 +6,15 @@ import {
   incrementRow, 
   resetCol, 
   decrementCol, 
-  decrementRow,
   update
 } from '../actions';
 
 import "./Keyboard.css";
 
-
-
 const Keyboard = () => {
   const row = useSelector(state => state.row);
   const col = useSelector(state => state.col);
-  const board = useSelector(state => state.board);
   const dispatch = useDispatch();
-
-  const enter = () => {
-    dispatch(incrementRow());
-    dispatch(resetCol())
-  }
   
   return (
     <div className="div">
