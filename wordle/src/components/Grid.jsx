@@ -7,7 +7,7 @@ const Grid = () => {
 
   const board = useSelector(state => state.board);
   const WORD = useSelector(state => state.word);
-
+  
   return (
     <div className="grid">
       <Container className="container">
