@@ -69,7 +69,7 @@ const Keyboard = () => {
           <Button 
             className="enter"
             onClick={() => {
-              if(col === 4){
+              if(col >= 4){
                 dispatch(resetCol());
                 dispatch(incrementRow());
               }

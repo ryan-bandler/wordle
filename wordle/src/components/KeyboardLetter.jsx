@@ -1,18 +1,8 @@
 import {Button} from 'react-bootstrap';
 import { update, incrementCol } from '../actions';
 import { useDispatch, useSelector } from 'react-redux';
+import { checkStatus } from '../util/checkStatus';
 import "./KeyboardLetter.css"
-
-const checkStatus = (letter, correct, wrong, misplaced) => {
-    if(correct.includes(letter))
-      return "correct";
-    else if (wrong.includes(letter))
-      return "wrong";
-    else if (misplaced.includes(letter))
-      return "misplaced";
-    else
-      return "";
-}
 
 const KeyboardLetter = ({letter}) => {
   const col = useSelector(state => state.col);
