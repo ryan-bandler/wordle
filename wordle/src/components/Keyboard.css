@@ -18,11 +18,16 @@
     
 }
 
+.keyboardButton:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: grey;
+}
+
 .backButton{
   font-size: 200%;
   margin: 2px;
   position: relative;
-
   bottom: 0px;
   border-color: grey;
   background-color: grey;
@@ -52,18 +57,17 @@
   and (-webkit-min-device-pixel-ratio: 3) { 
     .backButton {
       font-size: 100%;
-      width: 30px;
-      height: 45px;
       margin-top: 3px;
+      width: 30px;
       padding: 0px;
       text-align: center;
       justify-content: center;
     }
 
-    #middleRow {
-      padding-left: 5%;
-    }
+    
 
+    
+    
     #bottomRow {
       padding-left: 5%; padding-right: 5%;
     }

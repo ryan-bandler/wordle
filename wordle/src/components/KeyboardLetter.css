@@ -9,6 +9,18 @@
   flex-direction: initial;
 }
 
+#misplaced{
+  background-color: #deb737;
+}
+
+#wrong{
+  background-color: #5a6266;
+}
+
+#correct{
+  background-color: #66a358;
+}
+
 .keyboardButton:hover {
   outline: none;
   box-shadow: none;
