@@ -64,10 +64,14 @@
       justify-content: center;
     }
 
-    
 
-    
-    
+    .middleRow {
+      text-align: center;
+      justify-content: center;
+      
+      padding-left: 30px;
+    }
+  
     #bottomRow {
       padding-left: 5%; padding-right: 5%;
     }
@@ -75,8 +79,55 @@
     .enter {
       font-size: 100%;
     }
-
 }
 
+@media screen 
+  and (min-device-width: 393px) 
+  and (min-device-height: 851px) 
+  and (-webkit-min-device-pixel-ratio: 2.6) { 
+  
+  .backButton {
+    font-size: 100%;
+    margin-top: 3px;
+    width: 30px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
 
+  .enter {
+    font-size: 100%;
+    width: 13%;
+    height: 45px;
+    margin-top: 3px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+}
 
+@media screen 
+  and (min-device-width: 350px) 
+  and (-webkit-min-device-pixel-ratio: 2.0) {
+
+  
+    .enter {
+      font-size: 100%;
+      width: 13%;
+      height: 45px;
+      margin-top: 3px;
+      padding: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .backButton {
+      font-size: 100%;
+      margin-top: 3px;
+      width: 30px;
+      padding: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+    
+}
