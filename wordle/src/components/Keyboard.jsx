@@ -6,14 +6,23 @@ import {
   incrementRow, 
   resetCol, 
   decrementCol, 
-  update
+  update,
+  addCorrect,
+  addMisplaced,
+  addWrong
 } from '../actions';
 
 import "./Keyboard.css";
+import { getStatus } from "../util/getStatus";
+import { forwardRef } from "react";
+
+
 
 const Keyboard = () => {
   const row = useSelector(state => state.row);
   const col = useSelector(state => state.col);
+  const board = useSelector(state => state.board);
+  const word = useSelector(state => state.word)
   const dispatch = useDispatch();
   
   return (
@@ -66,6 +75,22 @@ const Keyboard = () => {
             onClick={() => {
               dispatch(resetCol());
               dispatch(incrementRow());
+              board[row].map((char, idx) => {
+                switch(getStatus(word, char, board[0], row, idx)){
+                  case "correct":
+                    dispatch(addCorrect(char));
+                    console.log(char)
+                    break;
+                  case "wrong":
+                    dispatch(addWrong(char));
+                    break;
+                  case "misplaced":
+                    dispatch(addMisplaced(char));
+                    break;
+                  default:
+                    break;
+                }
+              })
             }}
           >
             Enter
