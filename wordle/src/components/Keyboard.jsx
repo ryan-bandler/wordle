@@ -14,9 +14,6 @@ import {
 
 import "./Keyboard.css";
 import { getStatus } from "../util/getStatus";
-import { forwardRef } from "react";
-
-
 
 const Keyboard = () => {
   const row = useSelector(state => state.row);
@@ -50,7 +47,9 @@ const Keyboard = () => {
           <KeyboardLetter letter="J"/>
           <KeyboardLetter letter="K"/>
           <KeyboardLetter letter="L"/>
-          <Button 
+        </Row>   
+        <Row className="justify-content-md-center" id="middleRow">
+        <Button 
             className="backButton"
             onClick={() => {
               if(col === 0) return;
@@ -59,10 +58,7 @@ const Keyboard = () => {
             }}
           >
             <Icon icon="bi:backspace" style={{backgroundColor: "grey"}} />
-          </Button>
-
-        </Row>   
-        <Row className="justify-content-md-center" id="keyRow">
+          </Button> 
           <KeyboardLetter letter="Z"/>
           <KeyboardLetter letter="X"/>
           <KeyboardLetter letter="C"/>
@@ -73,10 +69,12 @@ const Keyboard = () => {
           <Button 
             className="enter"
             onClick={() => {
-              dispatch(resetCol());
-              dispatch(incrementRow());
+              if(col >= 4){
+                dispatch(resetCol());
+                dispatch(incrementRow());
+              }
               board[row].map((char, idx) => {
-                switch(getStatus(word, char, board[0], row, idx)){
+                switch(getStatus(word, char, board[row], row, idx)){
                   case "correct":
                     dispatch(addCorrect(char));
                     console.log(char)
