@@ -7,5 +7,15 @@
 
 .header  {
   padding-top: 0px;
-  font-size: large;
+  font-size: 20px;
+  text-size-adjust: auto;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .header {
+    font-size: 15px;
+  }
+  
 }

@@ -3,3 +3,9 @@
   text-align: center;
   color: #D4E6FF;
 }
+
+.centered {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
