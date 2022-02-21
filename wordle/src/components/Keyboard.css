@@ -1,0 +1,78 @@
+.div {
+  bottom:0;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+}
+.keyboard {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  vertical-align: bottom;
+  display: inline-block;
+    float: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    bottom:0;
+    
+}
+
+.backButton{
+  font-size: 200%;
+  margin: 2px;
+  position: relative;
+
+  bottom: 0px;
+  border-color: grey;
+  background-color: grey;
+}
+
+.icon{
+  background-color: grey;
+  text-align: center;
+  width: 10px;
+}
+
+.enter {
+  font-size: 200%;
+  margin: 3px;
+
+  position: relative;
+  bottom: 0px;
+  border-color: grey;
+  background-color: grey;
+  flex-direction: initial;
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .backButton {
+      font-size: 100%;
+      width: 30px;
+      height: 45px;
+      margin-top: 3px;
+      padding: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #middleRow {
+      padding-left: 5%;
+    }
+
+    #bottomRow {
+      padding-left: 5%; padding-right: 5%;
+    }
+
+    .enter {
+      font-size: 100%;
+    }
+
+}
+
+
+
