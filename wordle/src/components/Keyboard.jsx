@@ -69,8 +69,10 @@ const Keyboard = () => {
           <Button 
             className="enter"
             onClick={() => {
-              dispatch(resetCol());
-              dispatch(incrementRow());
+              if(col === 4){
+                dispatch(resetCol());
+                dispatch(incrementRow());
+              }
               board[row].map((char, idx) => {
                 switch(getStatus(word, char, board[row], row, idx)){
                   case "correct":
