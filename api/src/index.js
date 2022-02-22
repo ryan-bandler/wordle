@@ -22,5 +22,5 @@ app.get('/checkWordValidity/:word', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Wordle API listening on port ${port}`);
 });
