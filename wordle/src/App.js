@@ -15,7 +15,6 @@ function App() {
       await axios.get('http://localhost:8080/word')
         .then(res => {
             dispatch(updateWord(res.data.word))
-            console.log(res.data.word)
         })
     }
     getWord();
