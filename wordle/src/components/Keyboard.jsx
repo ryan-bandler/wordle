@@ -1,27 +1,12 @@
 import KeyboardLetter from "./KeyboardLetter";
-import { Icon } from '@iconify/react';
+
 import {Row, Container, Button} from 'react-bootstrap';
-import { useDispatch, useSelector } from "react-redux";
-import {
-  incrementRow, 
-  resetCol, 
-  decrementCol, 
-  update,
-  addCorrect,
-  addMisplaced,
-  addWrong
-} from '../actions';
 
 import "./Keyboard.css";
-import { getStatus } from "../util/getStatus";
+import EnterButton from "./EnterButton";
+import BackButton from "./BackButton";
 
 const Keyboard = () => {
-  const row = useSelector(state => state.row);
-  const col = useSelector(state => state.col);
-  const board = useSelector(state => state.board);
-  const word = useSelector(state => state.word)
-  const dispatch = useDispatch();
-  
   return (
     <div className="div">
       <Container className="keyboard">
@@ -49,16 +34,7 @@ const Keyboard = () => {
           <KeyboardLetter letter="L"/>
         </Row>   
         <Row className="justify-content-md-center" id="middleRow">
-        <Button 
-            className="backButton"
-            onClick={() => {
-              if(col === 0) return;
-              dispatch(decrementCol());
-              dispatch(update(row, col-1, ""));
-            }}
-          >
-            <Icon icon="bi:backspace" style={{backgroundColor: "grey"}} />
-          </Button> 
+          <BackButton/>
           <KeyboardLetter letter="Z"/>
           <KeyboardLetter letter="X"/>
           <KeyboardLetter letter="C"/>
@@ -66,33 +42,7 @@ const Keyboard = () => {
           <KeyboardLetter letter="B"/>
           <KeyboardLetter letter="N"/>
           <KeyboardLetter letter="M"/>
-          <Button 
-            className="enter"
-            onClick={() => {
-              if(col >= 4){
-                dispatch(resetCol());
-                dispatch(incrementRow());
-              }
-              board[row].map((char, idx) => {
-                switch(getStatus(word, char, board[row], row, idx)){
-                  case "correct":
-                    dispatch(addCorrect(char));
-                    console.log(char)
-                    break;
-                  case "wrong":
-                    dispatch(addWrong(char));
-                    break;
-                  case "misplaced":
-                    dispatch(addMisplaced(char));
-                    break;
-                  default:
-                    break;
-                }
-              })
-            }}
-          >
-            Enter
-          </Button>
+          <EnterButton/>
         </Row>   
       </Container>
     </div>

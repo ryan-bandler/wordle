@@ -4,6 +4,7 @@
   text-align: center;
   justify-content: center;
 }
+
 .keyboard {
   display: flex;
   justify-content: center;
@@ -11,10 +12,10 @@
   position: relative;
   vertical-align: bottom;
   display: inline-block;
-    float: none;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    bottom:0;
+  float: none;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  bottom:0;
 }
 
 .keyboardButton:focus {
@@ -23,112 +24,8 @@
   background-color: grey;
 }
 
-.backButton{
-  font-size: 200%;
-  margin: 2px;
-  position: relative;
-  bottom: 0px;
-  border-color: grey;
-  background-color: grey;
-}
-
 .icon{
   background-color: grey;
   text-align: center;
   width: 10px;
-}
-
-.enter {
-  font-size: 200%;
-  margin: 3px;
-
-  position: relative;
-  bottom: 0px;
-  border-color: grey;
-  background-color: grey;
-  flex-direction: initial;
-}
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .backButton {
-      font-size: 100%;
-      margin-top: 3px;
-      width: 30px;
-      padding: 0px;
-      text-align: center;
-      justify-content: center;
-    }
-
-
-    .middleRow {
-      text-align: center;
-      justify-content: center;
-      
-      padding-left: 30px;
-    }
-  
-    #bottomRow {
-      padding-left: 5%; padding-right: 5%;
-    }
-
-    .enter {
-      font-size: 100%;
-    }
-}
-
-@media screen 
-  and (min-device-width: 393px) 
-  and (min-device-height: 851px) 
-  and (-webkit-min-device-pixel-ratio: 2.6) { 
-  
-  .backButton {
-    font-size: 100%;
-    margin-top: 3px;
-    width: 30px;
-    padding: 0px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .enter {
-    font-size: 100%;
-    width: 13%;
-    height: 45px;
-    margin-top: 3px;
-    padding: 0px;
-    text-align: center;
-    justify-content: center;
-  }
-}
-
-
-
-@media screen 
-  and (min-device-width: 350px) 
-  and (-webkit-min-device-pixel-ratio: 2.0) {
-
-  
-    .enter {
-      font-size: 100%;
-      width: 13%;
-      height: 45px;
-      margin-top: 3px;
-      padding: 0px;
-      text-align: center;
-      justify-content: center;
-    }
-
-    .backButton {
-      font-size: 100%;
-      margin-top: 3px;
-      width: 30px;
-      padding: 0px;
-      text-align: center;
-      justify-content: center;
-    }
-    
 }

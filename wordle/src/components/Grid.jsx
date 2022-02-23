@@ -6,7 +6,6 @@ import "./Grid.css"
 const Grid = () => {
 
   const board = useSelector(state => state.board);
-  const WORD = useSelector(state => state.word);
   
   return (
     <div className="grid">
@@ -20,8 +19,7 @@ const Grid = () => {
                       key={sIdx} 
                       idx={sIdx}
                       row={idx}
-                      letter={letter}
-                      word={WORD}                
+                      letter={letter}                
                     />
                   )
                 })}

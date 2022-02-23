@@ -1,0 +1,33 @@
+.enter {
+  font-size: 200%;
+  margin: 3px;
+  position: relative;
+  bottom: 0px;
+  border-color: grey;
+  background-color: grey;
+  flex-direction: initial;
+}
+
+@media screen 
+  and (min-device-width: 393px) 
+  and (min-device-height: 851px) 
+  and (-webkit-min-device-pixel-ratio: 2.6) { 
+  .enter {
+    font-size: 100%;
+    width: 13%;
+    height: 45px;
+    margin-top: 3px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  .enter {
+    font-size: 100%;
+  }
+}
