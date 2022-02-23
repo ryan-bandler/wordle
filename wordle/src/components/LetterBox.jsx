@@ -2,8 +2,11 @@ import { useSelector } from "react-redux";
 import { getStatus } from "../util/getStatus";
 import "./LetterBox.css";
 
-const LetterBox = ({letter, idx, row, word}) => {
+const LetterBox = ({letter, idx, row}) => {
+
   const curRow = useSelector(state => state.row);
+  const word = useSelector(state => state.word);
+  
   return (
     <div 
       className="letterBox" 

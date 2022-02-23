@@ -1,0 +1,35 @@
+.backButton{
+  font-size: 200%;
+  margin: 2px;
+  position: relative;
+  bottom: 0px;
+  border-color: grey;
+  background-color: grey;
+}
+
+@media screen 
+  and (min-device-width: 350px) 
+  and (-webkit-min-device-pixel-ratio: 2.0) {
+    .backButton {
+      font-size: 100%;
+      margin-top: 3px;
+      width: 30px;
+      padding: 0px;
+      text-align: center;
+      justify-content: center;
+    }   
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  .backButton {
+    font-size: 100%;
+    margin-top: 3px;
+    width: 30px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+}
